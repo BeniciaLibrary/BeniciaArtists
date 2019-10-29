@@ -1,0 +1,17 @@
+type: extended
+
+primary:
+  links:
+    - text: Home
+      href: /
+    - text: Artists
+      href: /artists/
+      links: artists
+    - text: About
+      href: /about/
+      links: about
+
+secondary:
+  search:
+    action: /search/
+    query: q

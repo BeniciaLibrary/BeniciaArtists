@@ -1,0 +1,35 @@
+.usa-footer {
+  .usa-button {
+    font-weight: $font-bold;
+  }
+
+  .usa-footer-secondary_section { // scss-lint:disable SelectorFormat
+    a {
+      color: $color-base;
+    }
+
+    li {
+      display: inline-block;
+      margin-right: $spacing-small;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media #{$breakpoint-lg} {
+  .usa-footer {
+    .usa-footer-secondary_section { // scss-lint:disable SelectorFormat
+      li {
+        display: block;
+        margin-right: 0;
+      }
+    }
+
+    .usa-unstyled-list li {
+      margin-bottom: $spacing-x-small;
+    }
+  }
+}

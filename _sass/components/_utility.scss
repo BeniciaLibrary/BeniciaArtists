@@ -1,0 +1,28 @@
+.arrow::after {
+  content: '\00a0\00BB';
+  display: inline;
+}
+
+.sticky {
+  position: -webkit-sticky; // scss-lint:disable VendorPrefix
+  position: sticky;
+  top: 0;
+}
+
+.lg-show {
+  display: none !important;
+}
+
+.base {
+  color: $color-base;
+}
+
+.white {
+  color: $color-white;
+}
+
+@media #{$breakpoint-lg} {
+  .lg-show {
+    display: block !important;
+  }
+}

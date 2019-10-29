@@ -1,0 +1,91 @@
+# Site settings
+maintainer: Benicia Public Library
+title: Benicia Artists
+location: Benicia
+description: Showcasing the lives and works of Benicia artists.
+email: example@example.com
+website: https://example.com/
+image: /assets/img/twitter_profile.png
+facebook: https://www.facebook.com/example-12345654321/
+twitter: https://twitter.com/example/
+google_analytics: false # example code: UA-12345678-12
+github:
+  organization: BeniciaPublicLibrary
+  repository: BeniciaArtists
+  default_branch: master
+
+sitewide_notification:
+  display: false
+  heading: Information Status
+  text: >-
+    If the library shuts down, we will not respond to email.
+
+theme: uswds-jekyll
+
+plugins:
+  - jekyll-redirect-from
+
+exclude:
+  - CONTRIBUTING.md
+  - circle.yml
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - vendor
+  - webpack.config.js
+
+keep_files:
+  - /assets/js/build/bundle.js
+
+scripts:
+  - /assets/js/build/bundle.js
+  - /assets/uswds/js/uswds.min.js
+
+styles:
+  - href: /assets/css/main.css
+    media: screen, print
+
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+  style: compressed
+
+defaults:
+  - scope:
+      path: "assets/uswds"
+    values:
+      skip_index: true
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "docs"
+  - scope:
+      path: "_pages/guidelines"
+    values:
+      pagination: true
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+kramdown:
+  parse_block_html: true
+
+jekyll_pages_api_search:
+  skip_index: false
+  index_fields:
+    title:
+      boost: 10
+    tags:
+      boost: 10
+    url:
+      boost: 5
+    body:
+  results_page_title: Search results

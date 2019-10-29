@@ -1,0 +1,7 @@
+key: default_art
+title: Default Art
+image: default.jpg
+description: |-
+  Default Art isn't really art. It's a placeholder for testing default images.
+artists:
+  - default_artist

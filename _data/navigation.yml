@@ -1,0 +1,27 @@
+about:
+  - text: About
+    href: "#about"
+  - text: FAQs
+    href: "#faqs"
+  - text: Contributions
+    href: "#contributions"
+  - text: About the site
+    href: "#about-the-site"
+
+artists:
+  - text: History
+    href: "#history"
+  - text: Directory
+    href: "#directory"
+
+artist:
+  - text: Biography
+    href: "#biography"
+  - text: Genres
+    href: "#genres"
+  - text: Art
+    href: "#art"
+
+art:
+  - text: Art
+    href: /art/

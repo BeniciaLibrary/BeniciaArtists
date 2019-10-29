@@ -1,0 +1,22 @@
+- name: Anime
+  artists:
+    - timmy_young
+- name: Cartoon
+  artists:
+    - timmy_young
+- name: Painting
+  artists:
+    - sarah_style
+- name: Sculpture
+  artists:
+    - sarah_style
+- name: Crafts
+  artists:
+    - jane_hammer
+- name: Uncategorized
+  artists:
+    - default_artist
+- name: Audio Visual
+  artists:
+    - jane_hammer
+    - barry_bling

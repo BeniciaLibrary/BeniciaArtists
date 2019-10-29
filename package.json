@@ -1,0 +1,29 @@
+{
+  "name": "community",
+  "version": "1.0.0",
+  "description": "Website for Community",
+  "scripts": {
+    "build-js": "webpack --config --progress --colors",
+    "watch-js": "webpack -w --config --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mark-cooper/community.git"
+  },
+  "author": "Mark Cooper",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/mark-cooper/community/issues"
+  },
+  "homepage": "https://github.com/mark-cooper/community#readme",
+  "dependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-preset-es2015": "^6.14.0",
+    "basscss-sass": "^4.0.0",
+    "jquery": "^3.4.1",
+    "stickyfilljs": "^2.0.2",
+    "webpack": "^1.13.2"
+  }
+}

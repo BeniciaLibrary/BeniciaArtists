@@ -1,0 +1,72 @@
+.home .usa-navbar {
+  border: 0;
+}
+
+.home-featured {
+  max-width: 25%;
+  max-height: 100px;
+  float: left;
+  margin-right: 0.5rem;
+}
+
+.home-featured + div {
+  margin-left: 10rem;
+}
+
+.home-grid {
+  > :last-child > :last-child {
+    margin-bottom: 0;
+  }
+
+  .usa-grid a {
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: $spacing-medium;
+    text-decoration: none;
+
+    h3 {
+      color: $color-primary;
+      margin-top: 0;
+    }
+
+    p {
+      color: $color-base;
+    }
+
+    .icon-large {
+      float: left;
+      margin-right: $spacing-md-small;
+    }
+
+    &:hover {
+      background-color: $color-blue-light;
+
+      h3 {
+        color: $color-primary-darker;
+      }
+
+      .icon-large {
+        background-color: $border-color;
+      }
+    }
+  }
+}
+
+.home-hero h1 {
+  max-width: 80rem;
+}
+
+.home-events p {
+  max-width: $lead-max-width;
+}
+
+@media #{$breakpoint-md} {
+  .home-grid > :last-child > a {
+    margin-bottom: 0;
+  }
+
+  .home-grid .usa-grid  a:first-child {
+    margin-right: $spacing-medium;
+  }
+}

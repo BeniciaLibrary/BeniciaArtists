@@ -1,0 +1,9 @@
+key: default_artist
+name: Default Artist
+image: default.png
+biography: |-
+  Default Artist isn't really an artist. It's a placeholder for testing default images.
+genres:
+  - Uncategorized
+works:
+  - default_art

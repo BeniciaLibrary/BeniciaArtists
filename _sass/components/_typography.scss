@@ -1,0 +1,42 @@
+html {
+  color: $color-base;
+  font-family: $font-serif;
+}
+
+a {
+  color: $color-primary;
+
+  &:hover {
+    color: $color-primary-darker;
+    text-decoration: underline;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-sans;
+  font-weight: $font-bold;
+}
+
+h1 {
+  font-size: $h2-font-size;
+}
+
+.sans-serif {
+  font-family: $font-sans;
+}
+
+.usa-nav-link,
+.usa-nav-primary button {
+  -webkit-font-smoothing: auto;
+}
+
+@media #{$breakpoint-sm} {
+  h1 {
+    font-size: $h1-font-size;
+  }
+}

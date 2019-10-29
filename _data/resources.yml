@@ -1,0 +1,8 @@
+default_artist:
+  - title: Default Art, the review.
+    href: http://external.link/to/resource
+    external: true
+    author: Barry Burke
+    pub_date: 2010-10-31
+    description: >-
+      Review published in the Benicia Gazette.
