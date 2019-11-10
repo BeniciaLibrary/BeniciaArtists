@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+
+require 'csv'
+require 'http'
+require 'yaml'
+
+config   = YAML.load_file(File.join(__dir__, '_config.yml'))
+csv_url  = config['csv_url']
+csv_loc  = File.join(Dir.tmpdir, 'artists.csv')
+response = HTTP.get(csv_url)
+
+raise "Failed to download CSV from: #{csv_url}" unless response.status.success?
+
+File.open(csv_loc, 'w') do |f|
+  response.body.each do |chunk|
+    f.write chunk
+  end
+end
+
+CSV::Converters[:nil_to_empty] = ->(f) { f.nil? ? '' : f }
+
+CSV.foreach(csv_loc, headers: true, converters: :nil_to_empty) do |row|
+  row = row.to_hash
+  key = row['Key'].downcase
+  raise "Key missing: #{row}" if key.empty?
+end

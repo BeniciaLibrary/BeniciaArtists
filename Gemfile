@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'http'
 gem 'jekyll'
 
 group :jekyll_plugins do
