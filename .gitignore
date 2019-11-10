@@ -1,9 +1,11 @@
 _site/
-assets/js/build/
-howto/
-.sass-cache/
-node_modules/
 .DS_Store
+.sass-cache/
+*.txt
+assets/js/build/
+artists.csv
+howto/
+node_modules/
 
 # Local Netlify folder
 .netlify

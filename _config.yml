@@ -10,9 +10,11 @@ facebook: https://www.facebook.com/example-12345654321/
 twitter: https://twitter.com/example/
 google_analytics: false # example code: UA-12345678-12
 github:
-  organization: BeniciaPublicLibrary
+  organization: BeniciaLibrary
   repository: BeniciaArtists
   default_branch: master
+
+csv_url: https://docs.google.com/spreadsheets/d/1QBQqeTc16HjUbezYciuZv4Np0hFcDrinC7ARM9cBgTg/export?format=csv
 
 sitewide_notification:
   display: false
