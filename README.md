@@ -29,7 +29,7 @@ When updates are made to the source data the site needs to be regenerated.
 git checkout master
 git pull origin master
 git checkout -b regen-$date # example: regen-120219
-ruby regenerate-site
+regenerate-site
 ```
 
 This will download the latest version of the Artists CSV from Google Docs and
