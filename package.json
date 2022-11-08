@@ -18,12 +18,12 @@
   "homepage": "https://github.com/mark-cooper/community#readme",
   "dependencies": {
     "babel-core": "^6.14.0",
-    "babel-loader": "^6.2.5",
+    "babel-loader": "^9.1.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
     "babel-preset-es2015": "^6.14.0",
     "basscss-sass": "^4.0.0",
     "jquery": "^3.4.1",
     "stickyfilljs": "^2.0.2",
-    "webpack": "^1.13.2"
+    "webpack": "^5.74.0"
   }
 }
